@@ -1,0 +1,77 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write your own custom component styles here */
+.btn-blue {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+html,body{
+    height: 100%;
+}
+#__next{
+    height: 100vh;
+}
+
+
+
+.container{
+    height: 100%;
+}
+ .grid-container {
+   display: grid;
+     height: 100%;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   gap: 0px 0px;
+   grid-template-areas:
+           "Sidebar Charts Charts Charts"
+           "Sidebar Charts Charts Charts"
+           "Sidebar Charts Charts Charts";
+ }
+.Sidebar { grid-area: Sidebar; }
+.Charts { grid-area: Charts; }
+.baselist{
+    background: #F5F5F9;
+    color:#CFC8C8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.baselist > li > button:hover {
+    background: #3A418C;
+    color: #F7F6F6;
+
+}
+.coins-list{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color:#34346E ;
+    font-weight: bold;
+
+}
+.bartime{
+    background: #F5F5F9 ;
+}
+#chart{
+     background-color: #F5F5F9;
+;
+}
+.bartime>ul>li>button{
+    color:#CFC8C8;
+    font-size: 16px;
+    font-weight: bold;
+}
+.bartime>ul>li>button:hover{
+    color: #34346E;
+
+}
